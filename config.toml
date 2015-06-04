@@ -1,4 +1,4 @@
-baseurl = "http://manuel-hegner.github.io/power-libraries"
+baseurl = "http://power-libraries.github.io"
 languageCode = "en-us"
 title = "Power Libraries"
 theme = "bootie-docs"
@@ -6,7 +6,7 @@ copyright = "Copyright (c) 2015, Manuel Hegner; All rights reserved."
 
 [params]
 	noCategoryLink = true
-	repositoryUrl = "https://github.com/manuel-hegner/power-libraries"
+	repositoryUrl = "https://github.com/power-libraries/power-libraries"
 	description = "making Java simpler"
 	
 	[params.mainMenu.iopower]
