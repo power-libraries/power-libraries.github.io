@@ -99,7 +99,7 @@ and more understandable.</p>
 
 <p>with IO Power:</p>
 
-<pre><code class="language-java">try(BufferedWriter out = Out.file(&quot;test.txt&quot;).fromWriter(StandardCharsets.UTF_8)) {
+<pre><code class="language-java">try(BufferedWriter out = Out.file(&quot;test.txt&quot;).usingUTF8().asWriter()) {
     out.write(&quot;Hello World&quot;);
 }
 </code></pre>
@@ -135,10 +135,15 @@ byte[] bytes=byteOut.toByteArray();
 <p>with IO Power:</p>
 
 <pre><code class="language-java">byte[] bytes;
-try(BAObjectOutputStream out=Out.bytes().fromObjects()) {
+try(BAObjectOutputStream out=Out.bytes().asObjects()) {
     out.writeObject(someObject);
     bytes=out.toByteArray(); //this closes the stream automatically
 }
+</code></pre>
+
+<p>or even simpler</p>
+
+<pre><code class="language-java">byte[] bytes=Out.bytes().writeObject(someObject);
 </code></pre>
 
 				</section>
