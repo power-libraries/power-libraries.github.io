@@ -24,7 +24,7 @@ try(BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileWrite
 with IO Power:
 
 ~~~java
-try(BufferedWriter out = Out.file("test.txt").fromWriter(StandardCharsets.UTF_8)) {
+try(BufferedWriter out = Out.file("test.txt").usingUTF8().asWriter()) {
     out.write("Hello World");
 }
 ~~~
@@ -64,8 +64,14 @@ with IO Power:
 
 ~~~java
 byte[] bytes;
-try(BAObjectOutputStream out=Out.bytes().fromObjects()) {
+try(BAObjectOutputStream out=Out.bytes().asObjects()) {
 	out.writeObject(someObject);
 	bytes=out.toByteArray(); //this closes the stream automatically
 }
+~~~
+
+or even simpler
+
+~~~java
+byte[] bytes=Out.bytes().writeObject(someObject);
 ~~~
