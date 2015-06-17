@@ -18,7 +18,7 @@
       <guid>http://power-libraries.github.io/iopower/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;../javadocs/iopower/index.html?com/github/powerlibraries/io/package-summary.html&#34;&gt;Javadocs&lt;/a&gt; - &lt;a href=&#34;https://github.com/manuel-hegner/power-libraries/releases&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../javadocs/iopower/index.html?com/github/powerlibraries/io/package-summary.html&#34;&gt;Javadocs&lt;/a&gt; - &lt;a href=&#34;http://search.maven.org/remotecontent?filepath=com/github/power-libraries/iopower/1.0.0/iopower-1.0.0.jar&#34;&gt;Download&lt;/a&gt; - &lt;a href=&#34;http://search.maven.org/#artifactdetails|com.github.power-libraries|iopower|1.0.0|jar&#34;&gt;Maven&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;IO Power is the first and really tiny library of the Power Libraries. It
 contains some simple helper method for opening Input- and Outputstreams. The
