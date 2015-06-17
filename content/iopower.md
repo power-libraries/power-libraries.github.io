@@ -3,7 +3,7 @@ categories = ["general"]
 date = "2015-05-27T17:52:47+02:00"
 title = "IO Power"
 +++
-[Javadocs](../javadocs/iopower/index.html?com/github/powerlibraries/io/package-summary.html) - [Download](https://github.com/manuel-hegner/power-libraries/releases)
+[Javadocs](../javadocs/iopower/index.html?com/github/powerlibraries/io/package-summary.html) - [Download](http://search.maven.org/remotecontent?filepath=com/github/power-libraries/iopower/1.0.0/iopower-1.0.0.jar) - [Maven](http://search.maven.org/#artifactdetails|com.github.power-libraries|iopower|1.0.0|jar)
 
 IO Power is the first and really tiny library of the Power Libraries. It 
 contains some simple helper method for opening Input- and Outputstreams. The 
