@@ -5,10 +5,7 @@ title = "IO Power"
 +++
 [Javadocs](../javadocs/iopower/index.html?com/github/powerlibraries/io/package-summary.html) - [Download](http://search.maven.org/remotecontent?filepath=com/github/power-libraries/iopower/1.0.0/iopower-1.0.0.jar) - [Maven](http://search.maven.org/#artifactdetails|com.github.power-libraries|iopower|1.0.0|jar)
 
-IO Power is the first and really tiny library of the Power Libraries. It 
-contains some simple helper method for opening Input- and Outputstreams. The 
-main purpose of IO Power is to make opening streams, readers and writers shorter 
-and more understandable.
+IO Power is the first library of Power Libraries. It contains some helper methods for opening Input- and OutputStreams and Readers and Writers. The main purpose of IO Power is to make opening streams, readers and writers less cluttered and simple to understand.
 
 ## Examples
 ### Writing UTF-8
