@@ -2,5 +2,8 @@ com.github.powerlibraries.io
 com.github.powerlibraries.io.builder
 com.github.powerlibraries.io.builder.sources
 com.github.powerlibraries.io.builder.targets
+com.github.powerlibraries.io.functions
 com.github.powerlibraries.io.helper
 com.github.powerlibraries.io.helper.byteout
+com.github.powerlibraries.io.helper.stringout
+org.github.power.io
