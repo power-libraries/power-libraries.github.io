@@ -1,9 +1,6 @@
 version: 2.1
 jobs:
   build:
-    branches:
-      only:
-        - sources
     docker:
       - image: cibuilds/hugo:latest
     steps:
