@@ -9,6 +9,6 @@ copyright = "Copyright (c) 2015, Manuel Hegner; All rights reserved."
 	repositoryUrl = "https://github.com/power-libraries/power-libraries"
 	description = "making Java simpler"
 	
-	[params.mainMenu.iopower]
-		url="iopower"
-		name="IO Power"	
+[[menu.main]]
+	url="iopower"
+	name="IO Power"	
