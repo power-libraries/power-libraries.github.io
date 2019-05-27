@@ -10,6 +10,7 @@ jobs:
     docker:
       - image: cibuilds/hugo:latest
     steps:
+      - checkout
       - add_ssh_keys:
           fingerprints:
             - "1b:68:30:58:84:46:f4:bd:6d:11:3a:a5:e2:f2:d7:75"
