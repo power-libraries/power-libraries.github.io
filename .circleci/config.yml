@@ -6,7 +6,6 @@ jobs:
     steps:
       - checkout
       - run: hugo
-      - run: echo ${CIRCLE_BRANCH}
   deploy:
     docker:
       - image: cibuilds/hugo:latest
@@ -14,6 +13,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "1b:68:30:58:84:46:f4:bd:6d:11:3a:a5:e2:f2:d7:75"
+      - run: hugo
       - run: 
           name: clone master
           command: |
@@ -37,13 +37,8 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build:
-        filters:
-          branches:
-            only: /.*/
+      - build
       - deploy:
-          requires:
-            - build
           filters:
             branches:
               only: sources
