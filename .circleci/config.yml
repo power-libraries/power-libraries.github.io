@@ -4,12 +4,10 @@ jobs:
     docker:
       - image: cibuilds/hugo:latest
     steps:
-      - checkout:
+      - checkout
       - run:
           name: submodules
-          command: |
-            git submodule sync --recursive
-            git submodule update --recursive --init
+          command: git submodule update --recursive --init
       - run: hugo
   deploy:
     docker:
@@ -18,9 +16,7 @@ jobs:
       - checkout
       - run:
           name: submodules
-          command: |
-            git submodule sync --recursive
-            git submodule update --recursive --init
+          command: git submodule update --recursive --init
       - add_ssh_keys:
           fingerprints:
             - "1b:68:30:58:84:46:f4:bd:6d:11:3a:a5:e2:f2:d7:75"
