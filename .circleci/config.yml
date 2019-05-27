@@ -1,12 +1,14 @@
 version: 2.1
-docker:
-  - image: cibuilds/hugo:latest
 jobs:
   build:
+    docker:
+      - image: cibuilds/hugo:latest
     steps:
       - checkout
       - run: hugo
   deploy:
+    docker:
+      - image: cibuilds/hugo:latest
     steps:
       - add_ssh_keys:
           fingerprints:
