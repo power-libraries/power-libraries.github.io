@@ -13,17 +13,16 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "1b:68:30:58:84:46:f4:bd:6d:11:3a:a5:e2:f2:d7:75"
-      - run: |
-          mkdir dep
-          git clone git@github.com:power-libraries/power-libraries.github.io.git dep/
-          cd dep
-          git checkout master
-          rm -rf *
-          cp -r ../public/* ./
-          git config user.email "50981256+power-libraries-bot@users.noreply.github.com"
-          git config user.name "power-libraries-bot"
-          git commit --message "Update of page through $CIRCLE_SHA1"
-          git push
+      - run: mkdir dep
+      - run: git clone https://github.com/power-libraries/power-libraries.github.io.git dep/
+      - run: cd dep
+      - run: git checkout master
+      - run: rm -rf *
+      - run: cp -r ../public/* ./
+      - run: git config user.email "50981256+power-libraries-bot@users.noreply.github.com"
+      - run: git config user.name "power-libraries-bot"
+      - run: git commit --message "Update of page through $CIRCLE_SHA1"
+      - run: git push
     
 workflows:
   version: 2
