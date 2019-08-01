@@ -1,8 +1,7 @@
-+++
-date = "2015-05-27T00:44:43+02:00"
-title = "_index"
-
-+++
+---
+date: "2015-05-27T00:44:43+02:00"
+title: _index
+---
 
 Power Libraries is a small project to collect some repeatedly needed or 
 otherwise useful Java 8 classes in a collection of tiny libraries.

@@ -1,8 +1,9 @@
-+++
-categories = ["general"]
-date = "2019-08-01T15:03:56+0000"
-title = "IO Power"
-+++
+---
+categories:
+- general
+date: 2019-08-01T15:03:56+0000
+title: IO Power
+---
 [Javadocs](../javadocs/iopower/index.html?com/github/powerlibraries/io/package-summary.html) - [Download](http://search.maven.org/remotecontent?filepath=com/github/power-libraries/iopower/1.1.3/iopower-1.1.3.jar) - [Maven](http://search.maven.org/#artifactdetails|com.github.power-libraries|iopower|1.1.3|jar)
 
 IO Power is the first library of Power Libraries. It contains some helper methods for opening Input- and OutputStreams and Readers and Writers. The main purpose of IO Power is to make opening streams, readers and writers less cluttered and simple to understand.
