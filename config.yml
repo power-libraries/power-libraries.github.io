@@ -5,8 +5,7 @@ theme: bootie-docs
 copyright: 'Copyright (c) 2019, Manuel Hegner; All rights reserved.'
 enableGitInfo: true
 frontmatter:
-  date: lastmod
-  lastmod: :git
+  date: :git
 params:
   noCategoryLink: true
   repositoryUrl: 'https://github.com/power-libraries/power-libraries'
