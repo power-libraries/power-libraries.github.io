@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2019, Manuel Hegner; All rights reserved.</copyright>
+    <lastBuildDate>Thu, 01 Aug 2019 18:46:27 +0200</lastBuildDate>
     
 	<atom:link href="http://power-libraries.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
     <item>
       <title>IO Power</title>
       <link>http://power-libraries.github.io/iopower/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Aug 2019 18:46:27 +0200</pubDate>
       
       <guid>http://power-libraries.github.io/iopower/</guid>
       <description>Javadocs - Download - Maven
