@@ -40,6 +40,9 @@ workflows:
   build-and-deploy:
     jobs:
       - build
+          filters:
+            branches:
+              ignore: master
       - deploy:
           filters:
             branches:
