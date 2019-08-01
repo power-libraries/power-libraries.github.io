@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>General on Power Libraries</title>
+    <title>general on Power Libraries</title>
     <link>http://power-libraries.github.io/categories/general/</link>
-    <description>Recent content in General on Power Libraries</description>
+    <description>Recent content in general on Power Libraries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015, Manuel Hegner; All rights reserved.</copyright>
     <lastBuildDate>Wed, 27 May 2015 17:52:47 +0200</lastBuildDate>
-    <atom:link href="http://power-libraries.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://power-libraries.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>IO Power</title>
@@ -16,75 +18,10 @@
       <pubDate>Wed, 27 May 2015 17:52:47 +0200</pubDate>
       
       <guid>http://power-libraries.github.io/iopower/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;../javadocs/iopower/index.html?com/github/powerlibraries/io/package-summary.html&#34;&gt;Javadocs&lt;/a&gt; - &lt;a href=&#34;http://search.maven.org/remotecontent?filepath=com/github/power-libraries/iopower/1.0.0/iopower-1.0.0.jar&#34;&gt;Download&lt;/a&gt; - &lt;a href=&#34;http://search.maven.org/#artifactdetails|com.github.power-libraries|iopower|1.0.0|jar&#34;&gt;Maven&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;IO Power is the first and really tiny library of the Power Libraries. It
-contains some simple helper method for opening Input- and Outputstreams. The
-main purpose of IO Power is to make opening streams, readers and writers shorter
-and more understandable.&lt;/p&gt;
-
-&lt;h2 id=&#34;examples:8ba59fe12f79975dac7a010384904d86&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;h3 id=&#34;writing-utf-8:8ba59fe12f79975dac7a010384904d86&#34;&gt;Writing UTF-8&lt;/h3&gt;
-
-&lt;p&gt;in plain Java:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;try(BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileWriter(&amp;quot;test.txt&amp;quot;), StandardCharsets.UTF_8))) {
-    out.write(&amp;quot;Hello World&amp;quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;with IO Power:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;try(BufferedWriter out = Out.file(&amp;quot;test.txt&amp;quot;).usingUTF8().asWriter()) {
-    out.write(&amp;quot;Hello World&amp;quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;reading-lines-from-a-compressed-file:8ba59fe12f79975dac7a010384904d86&#34;&gt;Reading lines from a compressed file&lt;/h3&gt;
-
-&lt;p&gt;in plain Java:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;try(BufferedReader in = new BufferedReader(new InputStreamReader(new GZipInputStream(new FileInputStream(&amp;quot;test.txt.gz&amp;quot;))))) {
-    String line;
-    while((line=in.readLine())!=null)
-        System.out.println(line);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;with IO Power:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;for(String line:In.file(&amp;quot;test&amp;quot;).decompress().readLines())
-    System.out.println(line);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;serializing-objects-to-bytes:8ba59fe12f79975dac7a010384904d86&#34;&gt;Serializing Objects to bytes&lt;/h3&gt;
-
-&lt;p&gt;in plain Java:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
-try(ObjectOutputStream out = new ObjectOutputStream(byteOut);) {
-    out.writeObject(someObject);
-}
-byte[] bytes=byteOut.toByteArray();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;with IO Power:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;byte[] bytes;
-try(BAObjectOutputStream out=Out.bytes().asObjects()) {
-    out.writeObject(someObject);
-    bytes=out.toByteArray(); //this closes the stream automatically
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or even simpler&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;byte[] bytes=Out.bytes().writeObject(someObject);
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Javadocs - Download - Maven
+IO Power is the first library of Power Libraries. It contains some helper methods for opening Input- and OutputStreams and Readers and Writers. The main purpose of IO Power is to make opening streams, readers and writers less cluttered and simple to understand.
+Examples Writing UTF-8 in plain Java:
+try(BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileWriter(&amp;quot;test.txt&amp;quot;), StandardCharsets.UTF_8))) { out.write(&amp;quot;Hello World&amp;quot;); }  with IO Power:</description>
     </item>
     
   </channel>

@@ -1,0 +1,23 @@
+.doc-category {
+	display: none;
+}
+
+.sidebar-module>* {
+	display: none;
+}
+
+.sidebar-toc {
+	display: initial;
+}
+
+.navbar-header::before {
+	content:"";
+	display: block;
+	background: url("http://power-libraries.github.io/android-chrome-144x144.png") no-repeat;
+	background-size: 36px;
+	width:36px;
+	height:36px;
+	float: left;
+	padding-right:70px;
+	margin-top:5px;
+}
